@@ -27,7 +27,7 @@ const author = document.getElementById('author-input');
 
 const allAddedBooks = new BooksShelf();
 
-function reload() {
+function insertBooks() {
   booksContainer.innerHTML = allAddedBooks.books
     .map(
       (
@@ -45,7 +45,7 @@ function reload() {
   }
 }
 
-reload();
+insertBooks();
 
 addBookForm.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -57,11 +57,11 @@ addBookForm.addEventListener('submit', (event) => {
   allAddedBooks.addBook(newBook);
   titleInput.value = '';
   author.value = '';
-  reload();
+  insertBooks();
 });
 
 // eslint-disable-next-line no-unused-vars
 const removeBook = (bookIndex) => {
   allAddedBooks.removeBook(bookIndex);
-  reload();
+  insertBooks();
 };
