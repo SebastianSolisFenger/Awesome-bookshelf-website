@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+}
+
+header {
+  border: 3px solid black;
+
+  /* width: 96%; */
+  padding: 10px 20px;
+  align-self: stretch;
+}
