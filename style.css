@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+}
+
+main {
+  padding: 10px;
+}
+
+.book-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#form-add-book {
+  padding-top: 10px;
+}
+
+header {
+  border: 3px solid black;
+  padding: 10px 20px;
+  align-self: stretch;
+}
