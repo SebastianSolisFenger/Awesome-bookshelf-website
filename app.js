@@ -39,7 +39,7 @@ function reload() {
       (
         bookItem,
         index
-      ) => `<div class="book-item" style="border-bottom: 1px black solid;" ><p><strong>"${bookItem.titleInput}" by ${bookItem.author}.</strong></p>
+      ) => `<div class="book-item" style="border-bottom: 1px black solid;" ><p><strong>${bookItem.titleInput}<br>${bookItem.author}.</strong></p>
         <button onclick="removeBook(${index})">Remove</button>
         </div>`
     )
