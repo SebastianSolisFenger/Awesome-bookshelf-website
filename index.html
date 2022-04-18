@@ -4,26 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="main-container">
-      <div class="section books-list active">
-        <div class="heading-box">
+    <main class="main">
+      <div class="section-con books-list active">
+        <div class="heading">
           <h2>All Awesome Books</h2>
         </div>
-        <div id="books-selection-container"></div>
+        <div id="books-dynamic-container"></div>
       </div>
-      <div class="section add-book">
-        <h2>Add a new book here</h2>
-        <form method="post" id="add-book">
-          <input type="text" placeholder="Title" id="title" /><br />
-          <br />
-          <input type="text" placeholder="Author" id="author" /><br />
-          <br />
+
+      <div class="section-con add-book">
+        <form method="post" id="form-add-book">
+          <input type="text" placeholder="Title" id="title-input" /><br /><br />
+          <input
+            type="text"
+            placeholder="Author"
+            id="author-input"
+          /><br /><br />
           <button type="submit">Add</button>
         </form>
       </div>
     </main>
+
+    <script src="app.js"></script>
   </body>
 </html>
