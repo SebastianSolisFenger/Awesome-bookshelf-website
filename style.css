@@ -27,6 +27,7 @@ main {
 .title-nav {
   text-decoration: none;
   font-weight: 600;
+  color: black;
 }
 
 .ul-nav {
@@ -71,7 +72,7 @@ main {
 #books-dynamic-container {
   border: 3px solid black;
   box-shadow: 5px 2px 2px rgb(0 0 0);
-  width: 100%;
+  width: 70%;
   margin-top: 30px;
 }
 
@@ -93,13 +94,13 @@ main {
 
 #title-input {
   border: 3px solid black;
-  padding: 7px;
+  padding: 10px;
   box-shadow: 5px 2px 2px rgb(0 0 0);
 }
 
 #author-input {
   border: 3px solid black;
-  padding: 7px;
+  padding: 10px;
   box-shadow: 5px 2px 2px rgb(0 0 0);
 }
 
@@ -111,6 +112,11 @@ main {
   width: 20%;
   padding: 7px;
   box-shadow: 5px 2px 2px rgb(0 0 0);
+}
+
+.add-book {
+  padding-top: 80px;
+  /* padding-bottom: 20%; */
 }
 
 .title-author {
@@ -130,8 +136,8 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 70px;
+  padding-top: 80px;
+  /* padding-bottom: 13.5%; */
 }
 
 .books-list::after {
@@ -144,6 +150,22 @@ main {
   margin-top: 50px;
 }
 
+.contact-container {
+  padding-top: 80px;
+}
+
+.contact-title {
+  margin-bottom: 20px;
+}
+
+.para-contact {
+  margin-bottom: 20px;
+}
+
+.li-contact {
+  margin-bottom: 10px;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -151,6 +173,10 @@ main {
   padding: 10px;
   border: 3px solid black;
   box-shadow: 5px 2px 2px rgb(0 0 0);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
 }
 
 .section-con {
@@ -160,4 +186,5 @@ main {
 .section-con.active {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
