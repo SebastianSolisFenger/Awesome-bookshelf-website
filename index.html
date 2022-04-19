@@ -13,9 +13,20 @@
   </head>
   <body>
     <main class="main">
+      <header class="header">
+        <nav class="nav-bar">
+          <a href="#" class="title-nav">Awesome Books</a>
+          <ul class="ul-nav">
+            <li class="li-nav" onclick="displayActive('books-list')">List</li>
+            <li class="li-nav" onclick="displayActive('add-book')">Add new</li>
+            <li class="li-nav" onclick="displayActive()">Contact</li>
+          </ul>
+        </nav>
+      </header>
+
       <div class="section-con books-list active">
         <div class="heading">
-          <h2 class="h2-title">All Awesome Books</h2>
+          <h2 class="all-awe-title">All Awesome Books</h2>
         </div>
         <div id="books-dynamic-container"></div>
       </div>
@@ -28,6 +39,10 @@
           <button class="add-btn" type="submit">Add</button>
         </form>
       </div>
+
+      <footer class="footer">
+        <p class="para-footer">Copyright - All rights reserved.</p>
+      </footer>
     </main>
 
     <script src="app.js"></script>
