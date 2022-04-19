@@ -33,12 +33,6 @@ main {
   background-color: #fff;
 }
 
-header {
-  border: 3px solid black;
-  padding: 10px 20px;
-  align-self: stretch;
-}
-
 .heading {
   margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
@@ -49,7 +43,7 @@ header {
   box-shadow: 5px 2px 2px rgb(0 0 0);
 }
 
-h2 {
+.h2-title {
   display: flex;
   justify-content: center;
   font-family: "Poppins", sans-serif;
