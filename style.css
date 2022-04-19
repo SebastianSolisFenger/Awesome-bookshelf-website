@@ -105,3 +105,13 @@ h2 {
   padding: 4px 8px;
   font-family: "Poppins", sans-serif;
 }
+
+.books-list::after {
+  content: ".";
+  width: 30%;
+  height: 3px;
+  background-color: Black;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+}
