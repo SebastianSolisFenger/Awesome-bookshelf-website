@@ -33,15 +33,13 @@ function insertBooks() {
       (
         bookItem,
         index,
-      ) => `<div class="book-item" style="border-bottom: 1px black solid;" ><p><strong>${bookItem.titleInput}<br>${bookItem.author}.</strong></p>
-        <button onclick="removeBook(${index})">Remove</button>
+      ) => `<div class="book-item"  ><p class='title-author'><strong>"${bookItem.titleInput}" by ${bookItem.author}.</strong></p>
+        <button class='remove-btn' onclick="removeBook(${index})">Remove</button>
         </div>`,
     )
     .join('');
   if (allAddedBooks.books.length === 0) {
     booksContainer.style.cssText = 'border: none;';
-  } else {
-    booksContainer.style.cssText = 'border-bottom: 2px black solid;';
   }
 }
 
