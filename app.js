@@ -14,7 +14,7 @@ class BooksShelf {
   }
 
   removeBook(bookIndex) {
-    this.books = this.books.filter((item, index) => index !== bookIndex);
+    this.books.splice(bookIndex, 1);
     localStorage.setItem("books", JSON.stringify(this.books));
   }
 }
@@ -33,7 +33,7 @@ function insertBooks() {
       (
         bookItem,
         index
-      ) => `<div class="book-item"  ><p class='title-author'><strong>"${bookItem.titleInput}" by ${bookItem.author}.</strong></p>
+      ) => `<div class="book-item"><p class='title-author'><strong>"${bookItem.titleInput}" by ${bookItem.author}.</strong></p>
         <button class='remove-btn' onclick="removeBook(${index})">Remove</button>
         </div>`
     )
