@@ -17,27 +17,32 @@ main {
 
 .nav-bar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   border: 3px solid black;
   box-shadow: 5px 2px 2px rgb(0 0 0);
+  background-color: rgb(250, 234, 214);
 }
 
 .title-nav {
   text-decoration: none;
   font-weight: 600;
   color: black;
+  background-color: transparent;
 }
 
 .ul-nav {
   display: flex;
   gap: 20px;
   list-style: none;
+  background-color: transparent;
 }
 
 .li-nav {
   cursor: pointer;
+  background-color: transparent;
 }
 
 .li-nav:nth-child(1),
@@ -175,6 +180,7 @@ main {
   bottom: 10px;
   left: 10px;
   right: 10px;
+  background-color: rgb(250, 234, 214);
 }
 
 .section-con {
@@ -185,4 +191,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  .nav-bar {
+    justify-content: space-around;
+  }
 }
