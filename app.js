@@ -1,14 +1,10 @@
 class BooksShelf {
   constructor() {
-    if (localStorage.getItem('books') === null) {
-      this.books = [];
-      return;
-    }
-    this.books = JSON.parse(localStorage.getItem('books'));
+    this.books = [];
+    this.retrieveLocalstorage();
   }
 
   addBook(book = null) {
-    if (book === null) return;
     this.books.push(book);
     localStorage.setItem('books', JSON.stringify(this.books));
   }
@@ -16,6 +12,14 @@ class BooksShelf {
   removeBook(bookIndex) {
     this.books.splice(bookIndex, 1);
     localStorage.setItem('books', JSON.stringify(this.books));
+  }
+
+  retrieveLocalstorage() {
+    if (localStorage.getItem('books') === null) {
+      this.books = [];
+    } else {
+      this.books = JSON.parse(localStorage.getItem('books'));
+    }
   }
 }
 
