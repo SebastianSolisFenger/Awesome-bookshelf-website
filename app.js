@@ -2,9 +2,9 @@ class BooksShelf {
   constructor() {
     if (localStorage.getItem("books") === null) {
       this.books = [];
-      return;
+    } else {
+      this.books = JSON.parse(localStorage.getItem("books"));
     }
-    this.books = JSON.parse(localStorage.getItem("books"));
   }
 
   addBook(book = null) {
@@ -14,7 +14,7 @@ class BooksShelf {
   }
 
   removeBook(bookIndex) {
-    this.books = this.books.filter((item, index) => index !== bookIndex);
+    this.books.splice(bookIndex, 1);
     localStorage.setItem("books", JSON.stringify(this.books));
   }
 }
