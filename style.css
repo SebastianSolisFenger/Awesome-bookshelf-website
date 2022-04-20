@@ -15,6 +15,42 @@ main {
   font-family: "Poppins", sans-serif;
 }
 
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 3px solid black;
+  box-shadow: 5px 2px 2px rgb(0 0 0);
+  background-color: rgb(250, 234, 214);
+}
+
+.title-nav {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  background-color: transparent;
+}
+
+.ul-nav {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  background-color: transparent;
+}
+
+.li-nav {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.li-nav:nth-child(1),
+.li-nav:nth-child(2) {
+  padding-right: 15px;
+  border-right: 1.5px solid black;
+}
+
 .book-item {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -41,6 +77,8 @@ main {
 #books-dynamic-container {
   border: 3px solid black;
   box-shadow: 5px 2px 2px rgb(0 0 0);
+  width: 70%;
+  margin-top: 30px;
 }
 
 .h2-title {
@@ -61,13 +99,13 @@ main {
 
 #title-input {
   border: 3px solid black;
-  padding: 7px;
+  padding: 10px;
   box-shadow: 5px 2px 2px rgb(0 0 0);
 }
 
 #author-input {
   border: 3px solid black;
-  padding: 7px;
+  padding: 10px;
   box-shadow: 5px 2px 2px rgb(0 0 0);
 }
 
@@ -82,11 +120,7 @@ main {
 }
 
 .add-book {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+  padding-top: 80px;
 }
 
 .title-author {
@@ -98,6 +132,15 @@ main {
   box-shadow: 5px 2px 2px rgb(0 0 0);
   padding: 4px 8px;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.books-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
 }
 
 .books-list::after {
@@ -105,7 +148,53 @@ main {
   width: 30%;
   height: 3px;
   background-color: black;
-  display: block;
+  display: flex;
   margin: auto;
   margin-top: 50px;
+}
+
+.contact-container {
+  padding-top: 80px;
+}
+
+.contact-title {
+  margin-bottom: 20px;
+}
+
+.para-contact {
+  margin-bottom: 20px;
+}
+
+.li-contact {
+  margin-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 3px solid black;
+  box-shadow: 5px 2px 2px rgb(0 0 0);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: rgb(250, 234, 214);
+}
+
+.section-con {
+  display: none;
+}
+
+.section-con.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  .nav-bar {
+    justify-content: space-around;
+  }
 }
